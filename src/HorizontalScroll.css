@@ -1,0 +1,18 @@
+.horizontal-scroll-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent content from wrapping */
+  }
+  
+  .horizontal-scroll-content {
+    display: inline-block; /* Make the content scroll horizontally */
+  }
+  
+  .item {
+    /* Style for each item */
+    display: inline-block;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between items */
+    background-color: lightblue; /* Example background color */
+  }
