@@ -32,7 +32,7 @@ const HorizontalScroll = () => {
         <div className="slider">
         <table>
             <tr>
-            <th></th>
+            <th>Question #</th>
             <th>Question 1</th>
             <th>Question 2</th>
             <th>Question 3</th>
@@ -287,36 +287,10 @@ const HorizontalScroll = () => {
                 <option>Regular</option>
                 </select>
             </td>
-            <td>
-                <select>
-                <option>FTV-First Words</option>
-                <option>FTV-Quote</option>
-                <option>Location</option>
-                <option>Reference</option>
-                <option>Regular</option>
-                </select>
-            </td>
             </tr>
 
             <tr>
             <td>Player Name</td>
-            <td>
-                <select>
-                <option>Player 1</option>
-
-                <option>Player 2</option>
-
-                <option>Player 3</option>
-
-                <option>Player 4</option>
-
-                <option>Player 5</option>
-
-                <option>Player 6</option>
-
-                <option>Player 7</option>
-                </select>
-            </td>
             <td>
                 <select>
                 <option>Player 1</option>

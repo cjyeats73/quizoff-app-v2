@@ -6,20 +6,15 @@
 /* Apply a basic style to the tables */
 
 table {
-
-  border-collapse:
-collapse;
-
-  width:
-100%;
-
-  margin-bottom:
-20px;
-/* Add some margin between tables */
-
+  border-collapse: collapse;
+  width: 60%;
 }
 
-
+#bonus-error {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+}
 
 
 /* Style for table headers */

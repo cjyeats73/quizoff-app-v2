@@ -22,7 +22,7 @@ return (
 <div className="App">
   <HorizontalScroll />
 
-  <table>
+  <table id="bonus-error">
     <tr>
       <td>Team Bonus</td>
       <td>
