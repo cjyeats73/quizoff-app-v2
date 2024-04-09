@@ -42,6 +42,7 @@ return (
     </tr>
   </table>
 
+  <button href="./Scoreboard.js">Click to return to Scoreboard view.</button>
 </div>
 );
 }
