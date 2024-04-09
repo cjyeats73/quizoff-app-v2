@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "react-router-dom";
 import HorizontalScroll from "./HorizontalScroll.js";
 
 //Uncomment below for fancy look on site
@@ -42,7 +43,9 @@ return (
     </tr>
   </table>
 
-  <button href="./Scoreboard.js">Click to return to Scoreboard view.</button>
+  <Link to="/">
+    Click here to return to scoreboard view
+  </Link>
 </div>
 );
 }

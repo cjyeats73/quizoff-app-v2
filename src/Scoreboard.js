@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "react-router-dom";
 
 //Uncomment below for fancy look on site
 
@@ -20,7 +21,7 @@ return (
                 <h1>20</h1>
             </div>
         </div>
-        <button href="./App.js">Click here to enter scorecard mode!</button>
+        <Link to="/">Click here to enter scorecard mode!</Link>
     </div>
 );
 }
