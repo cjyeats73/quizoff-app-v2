@@ -43,10 +43,6 @@ return (
     </tr>
   </table>
 
-  <Link to="/">
-    Click here to return to scoreboard view
-  </Link>
-
   <div className="scoreboard_page">
         <div className="scoreboard_container">
             <div className="team_one_score">
@@ -61,7 +57,6 @@ return (
                 <h1>20</h1>
             </div>
         </div>
-        <Link to="/">Click here to enter scorecard mode!</Link>
     </div>
 </div>
 );
