@@ -1,65 +1,42 @@
 import React from 'react';
-import Link from "react-router-dom";
-import HorizontalScroll from "./HorizontalScroll.js";
+import {BrowserRouter as Router, 
+        Routes, 
+        Route,
+        Link} from "react-router-dom";
+import Scoreboard from "./Scoreboard.js";
+import Scorecard from './Scorecard.js';
 
 //Uncomment below for fancy look on site
 
 import './App.css';
 
-var errorCount = 0;
-
-function increment() {
-  errorCount+=1;
-  return errorCount;
-}
-
-function decrement() {
-  errorCount-=1;
-  return errorCount;
+function NoMatch() {
+  return (
+    <div style={{ padding: 20 }}>
+      <h2>404: Page Not Found</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
+    </div>
+  );
 }
 
 function App() {
 return (
-<div className="App">
-  <HorizontalScroll />
-
-  <table id="bonus-error">
-    <tr>
-      <td>Team Bonus</td>
-      <td>
-        <select>
-          <option>Bonus val</option>
-        </select>
-      </td>
-    </tr>
-  
-    <tr>
-      <td>Team Errors</td>
-      <td>
-        <button onClick={increment}>Add Error</button>
-        <button onClick={decrement}>Remove Error</button>
-      </td>
-      <td>Total Errors: {errorCount}</td>
-    </tr>
-  </table>
-
-  <div className="scoreboard_page">
-        <div className="scoreboard_container">
-            <div className="team_one_score">
-                <h2>Team 1</h2>
-                <h1>20</h1>
-            </div>
-            <div className="question_counter">
-                <h3>Question 3</h3>
-            </div>
-            <div className="team_two_score">
-                <h2>Team 2</h2>
-                <h1>20</h1>
-            </div>
-        </div>
-    </div>
-</div>
-);
-}
+  <Router>
+    <nav style={{ margin: 10 }}>
+        <Link to="/" style={{ padding: 5 }}>
+        Scoreboard View
+        </Link>
+        <Link to="/scorecard_qm" style={{ padding: 5 }}>
+        Scorecard View
+        </Link>
+    </nav>
+    <Routes>
+      <Route path="/" element={<Scoreboard />} />
+      <Route path="/scorecard_qm" element={<Scorecard />} />
+      <Route path="*" element={<NoMatch />} />
+    </Routes>
+  </Router>
+)
+};
 
 export default App;
