@@ -22,14 +22,6 @@ function NoMatch() {
 function App() {
 return (
   <Router>
-    <nav style={{ margin: 10 }}>
-        <Link to="/" style={{ padding: 5 }}>
-        Scoreboard View
-        </Link>
-        <Link to="/scorecard_qm" style={{ padding: 5 }}>
-        Scorecard View
-        </Link>
-    </nav>
     <Routes>
       <Route path="/" element={<Scoreboard />} />
       <Route path="/scorecard_qm" element={<Scorecard />} />

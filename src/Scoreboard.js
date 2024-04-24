@@ -1,11 +1,12 @@
 import React from 'react';
-
+import { useNavigate } from "react-router-dom";
 
 //Uncomment below for fancy look on site
 
 import './Scoreboard.css';
 
 function Scoreboard() {
+const navigate = useNavigate();
 return (
     <div className="scoreboard_page">
         <div className="scoreboard_container">
@@ -21,6 +22,9 @@ return (
                 <h1>20</h1>
             </div>
         </div>
+        <button className="btn" onClick={() => navigate('/scorecard_qm')}>
+            Scorecard View
+        </button>
     </div>
 );
 }
